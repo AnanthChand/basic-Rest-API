@@ -1,20 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BMI Calculator</title>
-</head>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Sofia+Sans+Extra+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Sofia+Sans+Extra+Condensed&display=swap");
 
-<body>
-    <h1>BMI Calculator</h1>
-    <form action="/" method="post">
-        <input type="text" name="weight" placeholder="Your weight KGs">
-        <input type="text" name="height" placeholder="Your height in centimeters.">
+      body {
+        font-family: "Sofia Sans Extra Condensed", sans-serif;
+        background-image: linear-gradient(
+          89.7deg,
+          rgba(0, 0, 0, 1) -10.7%,
+          rgba(53, 92, 125, 1) 88.8%
+        );
+        background-repeat: no-repeat;
+      }
+
+      input {
+        font-family: "Sofia Sans Extra Condensed", sans-serif;
+      }
+      h1 {
+        font-family: "Sofia Sans Extra Condensed", sans-serif;
+        color: white;
+        font-size: 50px;
+      }
+
+      .bmiPage {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      input {
+        height: 30px;
+        width: 200px;
+      }
+      button {
+        font-family: "Sofia Sans Extra Condensed", sans-serif;
+        height: 30px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="bmiPage">
+      <h1 class="heading">BMI Calculator</h1>
+      <form action="/" method="post" class="formBmi">
+        <input type="text" name="weight" placeholder="Your weight KGs" />
+        <input type="text" name="height" placeholder="Your height in cms" />
         <button type="submit">Calculate BMI</button>
-    </form>
-</body>
-
+      </form>
+      <p id="BmiResult"></p>
+    </div>
+  </body>
 </html>

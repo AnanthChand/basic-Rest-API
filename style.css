@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Sofia+Sans+Extra+Condensed&display=swap");
+
+body {
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  background-color: aqua;
+}
+
+input {
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+}
+h1 {
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+}
+
+.heading {
+  background-image: linear-gradient(
+    89.7deg,
+    rgba(0, 0, 0, 1) -10.7%,
+    rgba(53, 92, 125, 1) 88.8%
+  );
+}

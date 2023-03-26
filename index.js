@@ -19,7 +19,10 @@ app.post('/', (req, res) => {
     const height = Number(req.body.height);
     const bmi = (weight/(height*height))*10000;
     
-    res.send("The BMI of your body is: " + bmi)
+    res.write("The BMI of your body is: " + bmi);
+    res.end()
+    console.log(bmi);
+    // document.getElementById("BmiResult").innerHTML = 'The BMI of your body is: ${bmi}'  ;
 
 })
 
